@@ -1,0 +1,281 @@
+html h1, h2, h3, h4, p, a {
+	color: #fff;
+	font-family: "nordiquepro";
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+
+    width: 100%;
+    height: 80%;
+
+	background-color: #000;
+}
+
+.title-page {
+    background-image: url("../images/NoBorder/DripADj4Web1.png");
+	background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.title-page h1 {
+    background-color: rgb(0,0,0,0.75);
+
+    font-size: 3.5rem;
+    font-weight: 600;
+
+	text-align: left;
+
+	margin: 45vh 10% 0% 10%;
+}
+
+.title-page h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+
+    margin: 2% 10% 0 10%;
+}
+
+.strategy-page, .innovation-page, .execution-page {
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas: 
+	'left right';
+
+    height: 100vh;
+    padding: 7% 5% 5% 5%;
+    
+    align-items: center;
+    justify-items: center;
+}
+
+.strategy-page h1, .strategy-page h2, .strategy-page h3, 
+.innovation-page h1, .innovation-page h2, .innovation-page h3,
+.execution-page h1, .execution-page h2, .execution-page h3,
+.personal-experience h1, .personal-experience h2, .personal-experience h3 {
+
+	text-align: center;
+
+	width: auto;
+	height: auto;
+	margin: 0;
+}
+
+.strategy-page h1, .innovation-page h1, .execution-page h1 {
+	font-size: 6rem;
+	font-weight: 600;
+
+	line-height: 6rem;
+    padding: 0 0.5rem 2vh 0.5rem;
+    
+    text-align: center;
+	vertical-align: middle;
+
+	border-style: solid;
+	border-radius: 15px 15px 0 0;
+    border-width: 3px;
+}
+
+.strategy-page h1 {
+	border-color: #4d4c7d;
+}
+
+.innovation-page h1 {
+	border-color: #ffd31d;
+}
+
+.execution-page h1 {
+	border-color: #7fcd91;
+}
+
+.strategy-page h2, .innovation-page h2, .execution-page h2 {
+
+	font-size: 1.25rem;
+	font-weight: 600;
+
+	text-align: left;
+
+	width: fit-content;
+	padding-left: 0.5vw;
+
+	color: #000;
+
+    border-radius: 0 15px 15px 0;
+}
+
+.strategy-page h3, .innovation-page h3, .execution-page h3 {
+	font-size: 1.25rem;
+	padding: 0 3vw 0 3vw;
+	margin: 0 3vw 0 3vw;
+	text-align: left;
+}
+
+.strategy-page h3 {
+	color: #4d4c7d;
+}
+
+.innovation-page h3 {
+	color: #ffd31d;
+}
+
+.execution-page h3  {
+	color: #7fcd91;
+}
+
+
+.innovation-page .left-side img {
+    min-height: 80vh;
+}
+
+.left-side {
+    min-height: 50%;
+
+	grid-area: left;
+
+    padding: 0;
+    text-align: -webkit-center;
+}
+
+.right-side {
+
+    min-height: 50%;
+
+	grid-area: right;
+	
+	padding: 0 0;
+}
+
+.right-side img, .left-side img {
+	max-width: 100%;
+    max-height: 95%;
+    min-height: 45vh;
+    width: auto;
+    height: auto;
+    
+	border: 0.4vw solid #fff;
+}
+
+.title {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+
+    border-radius: 0 0 15px 15px;
+
+    width: 85%;
+    margin: 0 3vw 1.5rem 3vw;
+
+    text-align: -webkit-center;
+}
+
+.title h2 {    
+    padding: 15px 3vw;
+    text-align: center;
+}
+
+.title-subtitle {
+    border-radius: 0 0 15px 15px;
+    background-color: #4d4c7d;
+}
+
+.innovation-page .title-subtitle {
+    background-color: #ffd31d;
+}
+
+.execution-page .title-subtitle {
+    background-color: #7fcd91;
+}
+
+.personal-experience {
+	background-color: #000;
+}
+
+.personal-experience h3 {
+	color: #000;
+	background-color: #fff;
+
+	vertical-align: middle;
+
+	padding: 3vh 3vw;
+    margin: 1.5rem 3vw 0 3vw;
+    width: 85%;
+
+	border-radius: 15px;
+
+}
+
+#pinContainer {
+	width: 100%;
+	height: 100%;
+	/* overflow: hidden; */
+	background-color: #000;
+}
+
+@media (max-width: 1000px) {
+
+	html {
+		line-height: 1.5rem;
+	}
+
+	.grid-container {
+		height: fit-content;
+	}
+
+	.title-page {
+        height: fit-content;
+    }
+    
+    .title-page h1 {
+        margin: 30% 10% 5% 10%;
+    }
+
+    .title-page h1, .title-page h2 {
+        font-size: 4vw;
+    }
+
+	.strategy-page, .innovation-page, .execution-page {
+		grid-template-columns: auto;
+		grid-template-rows: auto;
+		height: fit-content;
+		grid-template-areas:
+		'left'
+	}
+
+	.innovation-page .right-side {
+		grid-area: left;
+	}
+
+	.innovation-page .left-side {
+		grid-area: right;
+	}
+
+	.title {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 2fr;
+    }
+
+	.strategy-page h1, .innovation-page h1, .execution-page h1 {
+		font-size: 2.5rem;
+	}
+
+	.strategy-page h2, .innovation-page h2, .execution-page h2 {
+		font-size: 0.75rem;
+	}
+}
+
+
+/* .strategy-page {
+	background-color: #4d4c7d;
+}
+
+.innovation-page {
+	background-color: #ffd31d;
+	color: #141414;
+}
+
+.execution-page {
+	background-color: #7fcd91;
+} */
