@@ -7,15 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/works', function(req, res, next) {
-    try{
-        res.render('pages/works');
-    } catch {
-        res.render('error');
-    }
+    res.render('works');
 })
 
 router.get('/contact', function(req, res, next) {
-    res.render('pages/contact');
+    res.render('contact');
 });
 
 module.exports = router;
