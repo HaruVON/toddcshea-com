@@ -48,7 +48,9 @@ html h1, h2, h3, h4, p, a {
     padding: 7% 5% 5% 5%;
     
     align-items: center;
-    justify-items: center;
+	justify-items: center;
+	
+	text-align: -webkit-center;
 }
 
 .strategy-page h1, .strategy-page h2, .strategy-page h3, 
@@ -64,7 +66,7 @@ html h1, h2, h3, h4, p, a {
 }
 
 .strategy-page h3, .innovation-page h3, .execution-page h3 {
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	padding: 0 3vw;
 	margin: 0 3vw;
 	text-align: left;
@@ -93,7 +95,6 @@ html h1, h2, h3, h4, p, a {
 	grid-area: left;
 
     padding: 0;
-    text-align: -webkit-center;
 }
 
 .right-side {
@@ -120,12 +121,8 @@ html h1, h2, h3, h4, p, a {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;
 
-    border-radius: 0 0 15px 15px;
-
     width: 85%;
     margin: 0 3vw 1.5rem 3vw;
-
-    text-align: -webkit-center;
 }
 
 .title h1 {
@@ -139,7 +136,7 @@ html h1, h2, h3, h4, p, a {
 	vertical-align: middle;
 
 	border-style: solid;
-	border-radius: 15px 15px 0 0;
+	border-radius: 7px 7px 0 0;
     border-width: 3px;
 }
 
@@ -152,8 +149,6 @@ html h1, h2, h3, h4, p, a {
 	text-align: center;
 	
 	color: #000;
-
-    border-radius: 0 15px 15px 0;
 }
 
 .strategy-page .title h1 {
@@ -169,7 +164,7 @@ html h1, h2, h3, h4, p, a {
 }
 
 .title-subtitle {
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 7px 7px;
     background-color: #4d4c7d;
 }
 
@@ -184,7 +179,7 @@ html h1, h2, h3, h4, p, a {
 .personal-experience {
 
 	background-color: #fff;
-	border-radius: 15px;
+	border-radius: 7px;
 
 	vertical-align: middle;
 
@@ -220,7 +215,7 @@ html h1, h2, h3, h4, p, a {
 	}
 
 	.grid-container {
-		height: fit-content;
+		height: auto;
 	}
 
 	.title-page {
@@ -240,7 +235,7 @@ html h1, h2, h3, h4, p, a {
 		grid-template-rows: auto;
 		height: fit-content;
 		grid-template-areas:
-		'left'
+		'left';
 	}
 
 	.innovation-page .right-side {
@@ -262,7 +257,11 @@ html h1, h2, h3, h4, p, a {
 	}
 
 	.strategy-page h2, .innovation-page h2, .execution-page h2 {
-		font-size: 0.75rem;
+		font-size: 1.25rem;
+	}
+
+	.left-side h3, .right-side h3 {
+		font-size: 1.25rem;
 	}
 }
 
