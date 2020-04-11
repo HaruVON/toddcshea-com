@@ -5,6 +5,7 @@ $(document).ready(function() {
         
         if(ws <= 800) {
             $("#logo-brand").removeClass("ml-3");
+            $("img").hide();        
         }
         else if(ws > 800) {
             $("#logo-brand").addClass("ml-3");
