@@ -215,8 +215,8 @@ body h1, h2, h3, h4, p, a {
 	}
 
 	.strategy-page, .innovation-page, .execution-page {
-		grid-template-columns: auto;
-		grid-template-rows: auto;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
 		grid-template-areas:
 		'left';
 	}
