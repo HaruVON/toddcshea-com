@@ -1,4 +1,4 @@
-html h1, h2, h3, h4, p, a {
+body h1, h2, h3, h4, p, a {
 	color: #fff;
 	font-family: "nordiquepro";
 }
@@ -14,6 +14,7 @@ html h1, h2, h3, h4, p, a {
 	background-color: #000;
 }
 
+/* Title Page */
 .title-page {
     background-image: url("../images/NoBorder/DripADj4Web1.png");
 	background-position: top;
@@ -21,24 +22,21 @@ html h1, h2, h3, h4, p, a {
     background-repeat: no-repeat;
 }
 
-.title-page h1 {
-    background-color: rgb(0,0,0,0.75);
-
-    font-size: 3.5rem;
+.title-page h1, .title-page h2 {
+    font-size: 3.5vw;
     font-weight: 600;
 
 	text-align: left;
 
-	margin: 45vh 10% 0% 10%;
+	margin: 31% 10% 0% 10%;
 }
 
 .title-page h2 {
-    font-size: 3.5rem;
-    font-weight: 600;
-
     margin: 2% 10% 0 10%;
 }
+/* Title Page */
 
+/* Panels */
 .strategy-page, .innovation-page, .execution-page {
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas: 
@@ -47,28 +45,22 @@ html h1, h2, h3, h4, p, a {
     height: 100vh;
     padding: 7% 5% 5% 5%;
     
-    align-items: center;
-	justify-items: center;
-	
+    align-items: center;	
 	text-align: -webkit-center;
 }
 
+/* Panels - text */
 .strategy-page h1, .strategy-page h2, .strategy-page h3, 
 .innovation-page h1, .innovation-page h2, .innovation-page h3,
 .execution-page h1, .execution-page h2, .execution-page h3,
 .personal-experience h1, .personal-experience h2, .personal-experience h3 {
-
-	text-align: center;
-
-	width: auto;
-	height: auto;
 	margin: 0;
 }
 
 .strategy-page h3, .innovation-page h3, .execution-page h3 {
-	font-size: 1.5rem;
+	font-size: 1.65vw;
 	padding: 0 3vw;
-	margin: 0 3vw;
+	width: 85%;
 	text-align: left;
 }
 
@@ -86,10 +78,14 @@ html h1, h2, h3, h4, p, a {
 
 
 .innovation-page .left-side img {
-    min-height: 80vh;
+    max-height: 80vh;
 }
 
-.left-side {
+/* Panels end */
+
+/* Grid columns */
+
+.left-side, .right-side {
     min-height: 50%;
 
 	grid-area: left;
@@ -98,24 +94,19 @@ html h1, h2, h3, h4, p, a {
 }
 
 .right-side {
-
-    min-height: 50%;
-
 	grid-area: right;
-	
-	padding: 0 0;
 }
 
 .right-side img, .left-side img {
 	max-width: 100%;
-    max-height: 95%;
+    max-height: 85vh;
     min-height: 45vh;
-    width: auto;
-    height: auto;
     
 	border: 0.4vw solid #fff;
 }
+/* Grid column */
 
+/* Content titles */
 .title {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -129,7 +120,7 @@ html h1, h2, h3, h4, p, a {
 	font-size: 6rem;
 	font-weight: 600;
 
-	line-height: 6rem;
+	line-height: auto;
     padding: 0 0.5rem 2vh 0.5rem;
     
     text-align: center;
@@ -175,7 +166,9 @@ html h1, h2, h3, h4, p, a {
 .execution-page .title-subtitle {
     background-color: #7fcd91;
 }
+/* Content titles */
 
+/* Personal experience */
 .personal-experience {
 
 	background-color: #fff;
@@ -200,35 +193,29 @@ html h1, h2, h3, h4, p, a {
 	padding: 3vh 0;
 
 }
+/* Personal experience */
 
+/* Main pin container */
 #pinContainer {
 	width: 100%;
-	height: 100%;
-	/* overflow: hidden; */
+	height: auto;
 	background-color: #000;
 }
+/* Main pin container */
 
+/* Tablet / Smaller screen width */
 @media (max-width: 1000px) {
-
-	html {
-		line-height: 1.5rem;
-	}
-
 	.grid-container {
 		height: auto;
 	}
 
 	.title-page {
         height: fit-content;
-    }
-    
-    .title-page h1 {
-        margin: 30% 10% 5% 10%;
-    }
-
-    .title-page h1, .title-page h2 {
-        font-size: 4vw;
-    }
+	}
+	
+	.title-page h1, .title-page h2 {
+		font-size: 1.5rem;
+	}
 
 	.strategy-page, .innovation-page, .execution-page {
 		grid-template-columns: auto;
@@ -236,6 +223,7 @@ html h1, h2, h3, h4, p, a {
 		height: fit-content;
 		grid-template-areas:
 		'left';
+		height: auto;
 	}
 
 	.innovation-page .right-side {
@@ -245,12 +233,6 @@ html h1, h2, h3, h4, p, a {
 	.innovation-page .left-side {
 		grid-area: right;
 	}
-
-	.title {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 2fr;
-    }
 
 	.strategy-page h1, .innovation-page h1, .execution-page h1 {
 		font-size: 2.5rem;
@@ -264,17 +246,9 @@ html h1, h2, h3, h4, p, a {
 		font-size: 1.25rem;
 	}
 }
+/* Tablet / Smaller Screen */
 
+/* Mobile phone */
+/* @media (max-width: 700px) {
 
-/* .strategy-page {
-	background-color: #4d4c7d;
-}
-
-.innovation-page {
-	background-color: #ffd31d;
-	color: #141414;
-}
-
-.execution-page {
-	background-color: #7fcd91;
 } */
