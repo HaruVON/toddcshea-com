@@ -9,6 +9,7 @@ $(document).ready(function() {
         }
         else if(ws > 800) {
             $("#logo-brand").addClass("ml-3");
+            $("img").show();
         };
 
     };
