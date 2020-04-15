@@ -7,6 +7,11 @@ img {
     max-width: 100%;
 }
 
+u {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
 .grid-container {
     height: auto;
 }
@@ -19,8 +24,24 @@ img {
 }
 
 .voyant-logo {
-    width: 42.5%;
+    width: 42.5;
     padding: 7% 0 0 2.5%;
+}
+
+.intro .voyant-logo {
+    width: 100%;
+    display: flex;
+}
+
+.intro .voyant-logo img {
+    width: 42.5%;
+    height: 5%;
+}
+
+.intro .voyant-logo h1 {
+    font-size: 1.75vw;
+    padding: 0 10% 0 5%;
+    align-self: center;
 }
 
 .intro-content {
