@@ -81,7 +81,7 @@ u {
     'r2';
 }
 
-.voyant-in, .voyant-mc {
+.voyant-in, .voyant-mc, .aware-in, .aware-mc {
     grid-gap: 1.25rem;
 
     padding: 0 2.5%;
@@ -96,6 +96,10 @@ u {
     grid-column-gap: 1rem;
     width: fit-content;
     /* margin-bottom: 3rem; */
+}
+
+.aware-in .top, .aware-mc .top {
+    width: 30% auto auto;
 }
 
 .top-img {
