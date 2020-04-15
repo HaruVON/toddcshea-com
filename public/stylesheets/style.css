@@ -32,7 +32,7 @@ body h1, h2, h3, h4, p, a {
 }
 
 .title-page h2 {
-    margin: 2% 10% 0 10%;
+    margin: 0% 10% 3% 10%;
 }
 /* Title Page */
 
@@ -58,7 +58,7 @@ body h1, h2, h3, h4, p, a {
 }
 
 .strategy-page h3, .innovation-page h3, .execution-page h3 {
-	font-size: 1.65vw;
+	font-size: 1.5rem;
 	padding: 0 3vw;
 	width: 85%;
 	text-align: left;
@@ -202,6 +202,12 @@ body h1, h2, h3, h4, p, a {
 	background-color: #000;
 }
 /* Main pin container */
+
+@media (min-width: 1650px) {
+	.title-page h1, .title-page h2 {
+		font-size: 2.75vw;
+	}
+}
 
 /* Tablet / Smaller screen width */
 @media (max-width: 1000px) {
