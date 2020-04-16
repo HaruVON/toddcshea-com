@@ -211,7 +211,7 @@ u {
 }
 
 .aware-in .row1 {
-    grid-template-columns: 0.33fr 1.25fr 1fr 1fr;
+    grid-template-columns: 0.33fr 1.115fr 1fr 1fr;
 }
 
 .aware-in .row2 {
