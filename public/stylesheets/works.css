@@ -35,7 +35,7 @@ u {
 
 .intro .voyant-logo img {
     width: 42.5%;
-    height: 5%;
+    height: auto;
 }
 
 .aware-intro .voyant-logo {
@@ -97,7 +97,7 @@ u {
     'c1 c2';
 }
 
-.voyant-in, .voyant-mc, .aware-in, .aware-mc {
+.voyant-in, .voyant-mc, .aware-in, .aware-mc, .nat-brands, .products {
     grid-gap: 1.25rem;
 
     padding: 0 2.5%;
@@ -142,7 +142,9 @@ u {
     align-items: flex-start;
 }
 
-.col1, .col2, .col3, .col4, .col5, .row1, .row2, .row3, .row4, .row5 {
+.col1, .col2, .col3, .col4, .col5, .row1, .row2, 
+.row3, .row4, .row5, .prod1, .prod2, .prod21,
+.prod23, .prod21a{
     display: grid;
     align-content: flex-end;
     align-items: flex-end;
@@ -216,4 +218,34 @@ u {
 
 .aware-in .row2 {
     grid-template-columns: 1fr 1fr;
+}
+
+.products {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 2fr;
+}
+
+.prod1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.prod2 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.prod21 {
+    grid-template-columns: 1.018fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'pt1 pt2'
+    'pb pb';
+}
+
+.prod21a {
+    
+}
+
+.prod23 {
+    /* grid-template-columns: ; */
 }
