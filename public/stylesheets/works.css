@@ -30,11 +30,12 @@ u {
 
 .intro .voyant-logo {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 4.25fr 5.75fr;
 }
 
 .intro .voyant-logo img {
-    width: 42.5%;
+    width: 100%;
     height: auto;
 }
 
@@ -229,14 +230,28 @@ u {
     grid-template-columns: 1fr 1fr;
 }
 
-.nat-brands {
-    align-items: center;
-    
+.brands-title {
+    width: fit-content;
+    margin: auto;
+    padding: 0.5rem;
+    border: solid 5px #fff;
+}
+
+.nat-brands .intro-content {
+    text-align: center;
+    margin: auto;
+    margin-top: 2.5rem;
+}
+
+.brands-img {
+    width: 66%;
+    margin: auto;
+    margin-top: 2.5rem;
 }
 
 .products {
     grid-template-columns: auto;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1.97fr;
 }
 
 .products img {
@@ -250,8 +265,8 @@ u {
 .prod2 {
     grid-template-columns: 1.19fr 1.175fr 0.999fr;
     grid-template-rows: auto;
-    height: fit-content;
-
+    height: min-content;
+    align-content: flex-start;
 }
 
 .prod21 {
