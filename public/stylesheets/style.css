@@ -1,3 +1,7 @@
+html {
+	font-size: 16px;
+}
+
 body h1, h2, h3, h4, p, a {
 	color: #fff;
 	font-family: "nordiquepro";
@@ -46,7 +50,7 @@ body h1, h2, h3, h4, p, a {
     padding: 7% 5% 5% 5%;
     
 	align-items: center;
-	text-align: -webkit-center;
+	/* align-content: center; */
 }
 
 /* Panels - text */
@@ -54,12 +58,11 @@ body h1, h2, h3, h4, p, a {
 .innovation-page h1, .innovation-page h2, .innovation-page h3,
 .execution-page h1, .execution-page h2, .execution-page h3,
 .personal-experience h1, .personal-experience h2, .personal-experience h3 {
-	margin: 0;
+	margin: auto;
 }
 
 .strategy-page h3, .innovation-page h3, .execution-page h3 {
 	font-size: 1.5rem;
-	padding: 0 3vw;
 	width: 85%;
 	text-align: left;
 }
@@ -178,6 +181,10 @@ body h1, h2, h3, h4, p, a {
 
     margin: 1.5rem 3vw 0 3vw;
     width: 85%;
+}
+
+.content-margin {
+	margin: 1.5rem 3vw 0 3vw;
 }
 
 .personal-experience h1 {
