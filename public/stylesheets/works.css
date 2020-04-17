@@ -119,12 +119,12 @@ u {
 }
 
 .top h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .top1 h1 {
     padding-left: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .top-img {
@@ -237,16 +237,20 @@ u {
     border: solid 5px #fff;
 }
 
+.brands-title h1 {
+    font-size: 3rem;
+}
+
 .nat-brands .intro-content {
     text-align: center;
     margin: auto;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 }
 
 .brands-img {
-    width: 66%;
+    width: 80%;
     margin: auto;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
 }
 
 .products {
