@@ -81,7 +81,8 @@ body h1, h2, h3, h4, p, a {
 
 
 .innovation-page .left-side img {
-    max-height: 80vh;
+	max-height: 80vh;
+	margin: auto;
 }
 
 /* Panels end */
@@ -101,9 +102,9 @@ body h1, h2, h3, h4, p, a {
 }
 
 .right-side img, .left-side img {
-	max-width: 100%;
+	max-width: 95%;
 	max-height: 85vh;
-	margin: auto;
+	margin-left: 5%;
     
 	border: 0.4vw solid #fff;
 }
@@ -115,7 +116,7 @@ body h1, h2, h3, h4, p, a {
 	grid-template-columns: 1fr;
 	grid-template-rows: auto auto;
 
-    width: 90%;
+    width: 95%;
     margin: 0 0 1.5rem 0;
 }
 
@@ -180,11 +181,11 @@ body h1, h2, h3, h4, p, a {
 	vertical-align: middle;
 
     margin: 1.5rem 0 0 0;
-    width: 90%;
+    width: 95%;
 }
 
 .content-margin {
-	width: 90%;
+	width: 95%;
 }
 
 .personal-experience h1 {
@@ -203,8 +204,7 @@ body h1, h2, h3, h4, p, a {
 
 .innovation-page .title, .innovation-page .content-margin, 
 .innovation-page .personal-experience {
-	width: 90%;
-	margin-left: 8%;
+	margin-left: 5%;
 }
 /* Personal experience */
 
