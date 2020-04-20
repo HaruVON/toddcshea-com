@@ -154,8 +154,13 @@ u {
 		display: none;
 	}
 
-	.intcont {
+	.intcont, .nat-brands .intro-content {
 		display: block;
+	}
+
+	.nat-brands h1 {
+		border: solid #fff 4px;
+		padding: 0.25em;
 	}
 
 	.intcont {
