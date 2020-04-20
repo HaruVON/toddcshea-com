@@ -23,7 +23,8 @@ body h1, h2, h3, h4, p, a {
     background-image: url("../images/DripADj4Web.png");
 	background-position: top;
     background-size: 100%;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	height: auto;
 }
 
 .title-page h1, .title-page h2 {
@@ -36,25 +37,25 @@ body h1, h2, h3, h4, p, a {
 }
 
 .title-page h2 {
-    margin: 0% 10% 3% 10%;
+    margin: 1% 10% 0% 10%;
 }
 /* Title Page */
 
 /* Panels */
 .strategy-page, .innovation-page, .execution-page {
 	grid-template-columns: 1fr 1fr;
-	grid-template-areas: 
+	grid-template-areas:
 	'left right';
 
     height: 100vh;
     padding: 7% 5% 5% 5%;
-    
+
 	align-items: center;
 	/* align-content: center; */
 }
 
 /* Panels - text */
-.strategy-page h1, .strategy-page h2, .strategy-page h3, 
+.strategy-page h1, .strategy-page h2, .strategy-page h3,
 .innovation-page h1, .innovation-page h2, .innovation-page h3,
 .execution-page h1, .execution-page h2, .execution-page h3,
 .personal-experience h1, .personal-experience h2, .personal-experience h3 {
@@ -79,10 +80,12 @@ body h1, h2, h3, h4, p, a {
 	color: #7fcd91;
 }
 
+.innovation-page .left-side {
+	margin: auto;
+}
 
 .innovation-page .left-side img {
 	max-height: 80vh;
-	margin: auto;
 }
 
 /* Panels end */
@@ -105,7 +108,7 @@ body h1, h2, h3, h4, p, a {
 	max-width: 95%;
 	max-height: 85vh;
 	margin-left: 5%;
-    
+
 	border: 0.4vw solid #fff;
 }
 /* Grid column */
@@ -126,7 +129,7 @@ body h1, h2, h3, h4, p, a {
 
 	line-height: auto;
     padding: 0 0.5rem 2vh 0.5rem;
-    
+
     text-align: center;
 	vertical-align: middle;
 
@@ -142,7 +145,7 @@ body h1, h2, h3, h4, p, a {
 	width: fit-content;
     padding: 15px 3vw;
 	text-align: center;
-	
+
 	color: #000;
 }
 
@@ -202,9 +205,9 @@ body h1, h2, h3, h4, p, a {
 
 }
 
-.innovation-page .title, .innovation-page .content-margin, 
+.innovation-page .title, .innovation-page .content-margin,
 .innovation-page .personal-experience {
-	margin-left: 5%;
+	margin: 1.5rem 0 0 5%;
 }
 /* Personal experience */
 
@@ -216,21 +219,32 @@ body h1, h2, h3, h4, p, a {
 }
 /* Main pin container */
 
-@media (min-width: 1650px) {
-	.title-page h1, .title-page h2 {
-		font-size: 2.75vw;
+@media only screen and (max-width: 1200px) {
+
+	.strategy-page h1, .innovation-page h1, .execution-page h1 {
+		font-size: 5rem;
 	}
+
+	.strategy-page h2, .innovation-page h2, .execution-page h2,
+	.left-side h3, .right-side h3 {
+		font-size: 1.45rem;
+	}
+
 }
 
 /* Tablet / Smaller screen width */
-@media (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
+
+	.left-side img, .right-side img {
+		display: none;
+	}
 
 	.title-page {
         height: fit-content;
 	}
-	
+
 	.title-page h1, .title-page h2 {
-		font-size: 1.5rem;
+		font-size: 2.25rem;
 	}
 
 	.strategy-page, .innovation-page, .execution-page {
@@ -249,20 +263,51 @@ body h1, h2, h3, h4, p, a {
 	}
 
 	.strategy-page h1, .innovation-page h1, .execution-page h1 {
-		font-size: 2.5rem;
+		font-size: 5rem;
 	}
 
-	.strategy-page h2, .innovation-page h2, .execution-page h2 {
-		font-size: 1.25rem;
-	}
-
+	.strategy-page h2, .innovation-page h2, .execution-page h2,
 	.left-side h3, .right-side h3 {
-		font-size: 1.25rem;
+		font-size: 1.55rem;
+	}
+
+	.left-side, .right-side {
+		width: 100%;
+		margin: auto;
+	}
+
+	.title, .content-margin, .personal-experience {
+		width: 100%;
+		margin: 1.5rem auto 0 auto;
+	}
+
+	.innovation-page .title, .innovation-page .content-margin,
+	.innovation-page .personal-experience {
+		width: 100%;
+		margin: 1.5rem auto 0 auto;
+	}
+
+	.content-margin, .personal-experience, .innovation-page .content-margin,
+	.innovation-page .personal-experience {
+		padding: 0 5%;
 	}
 }
 /* Tablet / Smaller Screen */
 
 /* Mobile phone */
-/* @media (max-width: 700px) {
+@media (max-width: 767px) {
 
-} */
+	.title-page h1, .title-page h2 {
+		font-size: 1.45rem;
+	}
+
+	.strategy-page h1, .innovation-page h1, .execution-page h1 {
+		font-size: 3rem;
+	}
+
+	.strategy-page h2, .innovation-page h2, .execution-page h2,
+	.left-side h3, .right-side h3 {
+		font-size: 1.25rem;
+	}
+
+}
