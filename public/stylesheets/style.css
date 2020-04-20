@@ -28,7 +28,7 @@ body h1, h2, h3, h4, p, a {
 }
 
 .title-page h1, .title-page h2 {
-    font-size: 3.5vw;
+    font-size: 3rem;
     font-weight: 600;
 
 	text-align: left;
