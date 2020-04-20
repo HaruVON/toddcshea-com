@@ -244,6 +244,11 @@ body h1, h2, h3, h4, p, a {
 		display: none;
 	}
 
+	.icons img {
+		display: block;
+		height: auto;
+	}
+
 	.title-page {
         height: fit-content;
 	}
@@ -301,6 +306,10 @@ body h1, h2, h3, h4, p, a {
 
 /* Mobile phone */
 @media (max-width: 767px) {
+
+	.icons img {
+		display: none;
+	}
 
 	.title-page h1, .title-page h2 {
 		font-size: 1.45rem;
