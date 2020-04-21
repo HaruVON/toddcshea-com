@@ -18,6 +18,13 @@ body h1, h2, h3, h4, p, a {
 	background-color: #000;
 }
 
+.panel {
+	display: block;
+	background-color: #000;
+	height: 700px;
+	width: 100vh;
+}
+
 /* Title Page */
 .title-page {
     background-image: url("../images/DripADj4Web.png");
