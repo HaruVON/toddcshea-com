@@ -39,7 +39,7 @@ router.post('/', (req, res) => {
 
 	const mailOpts = {
 		from: `${req.body.email}`,
-		to: GMAIL_USER,
+		to: 'tcshea1@gmail.com',
 		subject: `toddcshea.com: ${req.body.subject}`,
 		text: `Name: ${req.body.fname}\nEmail: ${req.body.email}\nSubject: ${req.body.subject}\nMessage:\n${req.body.message}`
 	}
