@@ -1,9 +1,6 @@
 var express = require('express');
-const nm = require('nodemailer')
-const bp = require('body-parser')
-var router = express.Router();
-express().use(bp.urlencoded({extended: true}))
 
+var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
