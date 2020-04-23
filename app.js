@@ -10,6 +10,7 @@ const bp = require('body-parser')
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const contactRouter = require('./routes/contact')
+const worksRouter = require('./routes/works')
 
 var app = express();
 
@@ -28,6 +29,8 @@ app.use(sslRedirect())
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/send', contactRouter)
+app.use('/contact', contactRouter)
+app.use('/works', worksRouter)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
