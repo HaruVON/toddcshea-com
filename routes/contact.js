@@ -3,7 +3,7 @@ const nm = require('nodemailer')
 
 var router = express.Router();
 
-const GMAIL_USER = proccess.env.GMAIL_USER
+const GMAIL_USER = process.env.GMAIL_USER
 const GMAIL_PASS = process.env.GMAIL_PASS
 
 router.get('/', function(req, res, next) {
