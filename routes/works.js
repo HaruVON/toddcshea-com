@@ -4,7 +4,7 @@ const bp = require('body-parser')
 var router = express.Router();
 express().use(bp.urlencoded({extended: true}))
 
-router.get('/works', function(req, res, next) {
+router.get('/', function(req, res, next) {
     res.render('works');
 })
 
