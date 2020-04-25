@@ -214,12 +214,12 @@ body h1, h2, h3, h4, p, a {
 	justify-content: center;
 	padding: 1.5vh 0 3vh 0;
 	margin: auto;
+	align-items: center;
 }
 
 .icons img {
 	/* flex: 25%; */
 	max-width: 18%;
-	max-height: 11em;
 }
 
 .innovation-page .title, .innovation-page .content-margin,
