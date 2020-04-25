@@ -150,8 +150,8 @@ body h1, h2, h3, h4, p, a {
 	font-weight: 600;
 	font-size: 1.5rem;
 
-	width: fit-content;
-    padding: 15px 3vw;
+	width: 90%;
+    padding: 15px 0;
 	text-align: left;
 
 	color: #000;
@@ -171,7 +171,8 @@ body h1, h2, h3, h4, p, a {
 
 .title-subtitle {
     border-radius: 0 0 7px 7px;
-    background-color: #4d4c7d;
+	background-color: #4d4c7d;
+	padding: 0 5%;
 }
 
 .innovation-page .title-subtitle {
