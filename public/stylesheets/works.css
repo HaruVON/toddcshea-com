@@ -305,7 +305,7 @@ u {
 		grid-template-columns: 42.5% auto auto;
 		grid-template-rows: 1fr;
 		grid-column-gap: 1em;
-		width: fit-content;
+		width: 100%;
 	}
 
 	.top h1 {
