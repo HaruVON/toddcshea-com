@@ -1,38 +1,38 @@
 nav {
-	font-family: "nordiquepro";
-	background-color: inherit;
-	width: 100%;
+  font-family: "nordiquepro";
+  background-color: inherit;
+  width: 100%;
 }
 
 nav button:focus {
-	outline: none;
+  outline: none;
 }
 
 nav a {
-	color: #fff;
+  color: #fff;
 }
 
 .navbar-brand {
-	font-size: 2.5rem;
-	padding-top: 0;
-	vertical-align: middle;
+  font-size: 2.5rem;
+  padding-top: 0;
+  vertical-align: middle;
 }
 
 .nav-link {
-	font-size: 1.25rem;
+  font-size: 1.25rem;
 }
 
 #navbar {
-	background-color: #000;
+  background-color: #000;
 }
 
 /* Small Tablets */
 @media (min-width: 321px) and (max-width: 767px) {
-	.navbar-brand {
-		font-size: 2rem;
-	}
+  .navbar-brand {
+    font-size: 2rem;
+  }
 
-	.nav-link {
-		font-size: 1.25rem;
-	}
+  .nav-link {
+    font-size: 1.25rem;
+  }
 }

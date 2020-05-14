@@ -1,348 +1,388 @@
 html {
-	font-size: 16px;
-	background-color: #000;
+  font-size: 16px;
+  background-color: #000;
 }
 
-body h1, h2, h3, h4, p, a {
-	color: #fff;
-	font-family: "nordiquepro";
+body h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: #fff;
+  font-family: "nordiquepro";
 }
 
 .grid-container {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 
-	background-color: #000;
+  background-color: #000;
 }
 
 .panel {
-	display: block;
-	background-color: #000;
-	height: 700px;
-	width: 100%;
+  display: block;
+  background-color: #000;
+  height: 700px;
+  width: 100%;
 }
 
 /* Title Page */
 .title-page {
-    background-image: url("../images/DripADj4Web.png");
-	background-position: top;
-    background-size: 100%;
-	background-repeat: no-repeat;
-	height: auto;
+  background-image: url("../images/DripADj4Web.png");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: auto;
 }
 
-.title-page h1, .title-page h2 {
-    font-size: 2.6rem;
-    font-weight: 600;
+.title-page h1,
+.title-page h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
 
-	text-align: left;
+  text-align: left;
 
-	margin: 31% 10% 0% 10%;
+  margin: 31% 10% 0% 10%;
 }
 
 .title-page h2 {
-    margin: 1% 10% 0% 10%;
+  margin: 1% 10% 0% 10%;
 }
 /* Title Page */
 
 /* Panels */
-.strategy-page, .innovation-page, .execution-page {
-	grid-template-columns: 1fr 1fr;
-	grid-template-areas:
-	'left right';
+.strategy-page,
+.innovation-page,
+.execution-page {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
 
-    height: 100vh;
-    padding: 7% 5% 5% 5%;
+  height: 100vh;
+  padding: 7% 5% 5% 5%;
 
-	align-items: center;
-	/* align-content: center; */
+  align-items: center;
+  /* align-content: center; */
 }
 
 /* Panels - text */
-.strategy-page h1, .strategy-page h2, .strategy-page h3,
-.innovation-page h1, .innovation-page h2, .innovation-page h3,
-.execution-page h1, .execution-page h2, .execution-page h3,
-.personal-experience h1, .personal-experience h2, .personal-experience h3 {
-	margin: auto;
+.strategy-page h1,
+.strategy-page h2,
+.strategy-page h3,
+.innovation-page h1,
+.innovation-page h2,
+.innovation-page h3,
+.execution-page h1,
+.execution-page h2,
+.execution-page h3,
+.personal-experience h1,
+.personal-experience h2,
+.personal-experience h3 {
+  margin: auto;
 }
 
-.strategy-page h3, .innovation-page h3, .execution-page h3 {
-	font-size: 1.5rem;
-	width: 90%;
-	text-align: left;
+.strategy-page h3,
+.innovation-page h3,
+.execution-page h3 {
+  font-size: 1.5rem;
+  width: 90%;
+  text-align: left;
 }
 
 .strategy-page h3 {
-	color: #4d4c7d;
+  color: #4d4c7d;
 }
 
 .innovation-page h3 {
-	color: #ffd31d;
+  color: #ffd31d;
 }
 
-.execution-page h3  {
-	color: #7fcd91;
+.execution-page h3 {
+  color: #7fcd91;
 }
 
 .innovation-page .left-side {
-	margin: auto;
+  margin: auto;
 }
 
 .innovation-page .left-side img {
-	max-height: 80vh;
+  max-height: 80vh;
 }
 
 /* Panels end */
 
 /* Grid columns */
 
-.left-side, .right-side {
-	/* min-height: 50%; */
+.left-side,
+.right-side {
+  /* min-height: 50%; */
 
-	grid-area: left;
+  grid-area: left;
 
-    padding: 0;
+  padding: 0;
 }
 
 .right-side {
-	grid-area: right;
+  grid-area: right;
 }
 
-.right-side img, .left-side img {
-	max-width: 95%;
-	max-height: 85vh;
-	margin-left: 5%;
+.right-side img,
+.left-side img {
+  max-width: 95%;
+  max-height: 85vh;
+  margin-left: 5%;
 
-	border: 0.4vw solid #fff;
+  border: 0.4vw solid #fff;
 }
 /* Grid column */
 
 /* Content titles */
 .title {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: auto auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 
-    width: 95%;
-    margin: 0 0 1.5rem 0;
+  width: 95%;
+  margin: 0 0 1.5rem 0;
 }
 
 .title h1 {
-	font-size: 4.75rem;
-	font-weight: 500;
+  font-size: 4.75rem;
+  font-weight: 500;
 
-	line-height: auto;
-    padding: 0 0.5rem 2vh 0.5rem;
+  line-height: auto;
+  padding: 0 0.5rem 2vh 0.5rem;
 
-    text-align: center;
-	vertical-align: middle;
+  text-align: center;
+  vertical-align: middle;
 
-	border-style: solid;
-	border-radius: 7px 7px 0 0;
-    border-width: 3px;
+  border-style: solid;
+  border-radius: 7px 7px 0 0;
+  border-width: 3px;
 }
 
 .title h2 {
-	font-weight: 600;
-	font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 
-	width: 90%;
-    padding: 15px 0;
-	text-align: left;
+  width: 90%;
+  padding: 15px 0;
+  text-align: left;
 
-	color: #000;
+  color: #000;
 }
 
 .strategy-page .title h1 {
-	border-color: #4d4c7d;
+  border-color: #4d4c7d;
 }
 
 .innovation-page .title h1 {
-	border-color: #ffd31d;
+  border-color: #ffd31d;
 }
 
 .execution-page .title h1 {
-	border-color: #7fcd91;
+  border-color: #7fcd91;
 }
 
 .title-subtitle {
-    border-radius: 0 0 7px 7px;
-	background-color: #4d4c7d;
-	padding: 0 5%;
+  border-radius: 0 0 7px 7px;
+  background-color: #4d4c7d;
+  padding: 0 5%;
 }
 
 .innovation-page .title-subtitle {
-    background-color: #ffd31d;
+  background-color: #ffd31d;
 }
 
 .execution-page .title-subtitle {
-    background-color: #7fcd91;
+  background-color: #7fcd91;
 }
 /* Content titles */
 
 /* Personal experience */
 .personal-experience {
+  background-color: #fff;
+  border-radius: 7px;
 
-	background-color: #fff;
-	border-radius: 7px;
+  vertical-align: middle;
 
-	vertical-align: middle;
-
-    margin: 1.5rem 0 0 0;
-    width: 95%;
+  margin: 1.5rem 0 0 0;
+  width: 95%;
 }
 
 .content-margin {
-	width: 95%;
+  width: 95%;
 }
 
 .personal-experience h3 {
-	color: #000;
-	padding: 3vh 0 1.5vh 0;
+  color: #000;
+  padding: 3vh 0 1.5vh 0;
 }
 
 .execution-page .personal-experience h3 {
-	padding-bottom: 3vh;
+  padding-bottom: 3vh;
 }
 
 .icons {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	padding: 1.5vh 0 3vh 0;
-	margin: auto;
-	align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1.5vh 0 3vh 0;
+  margin: auto;
+  align-items: center;
 }
 
 .icons img {
-	/* flex: 25%; */
-	max-width: 18%;
+  /* flex: 25%; */
+  max-width: 18%;
 }
 
-.innovation-page .title, .innovation-page .content-margin,
+.innovation-page .title,
+.innovation-page .content-margin,
 .innovation-page .personal-experience {
-	margin: 1.5rem 0 0 5%;
+  margin: 1.5rem 0 0 5%;
 }
 /* Personal experience */
 
 /* Main pin container */
 #pinContainer {
-	width: 100%;
-	height: auto;
-	background-color: #000;
+  width: 100%;
+  height: auto;
+  background-color: #000;
 }
 /* Main pin container */
 
 @media only screen and (max-width: 1200px) {
+  .title-page h1,
+  .title-page h2 {
+    font-size: 2rem;
+  }
 
-	.title-page h1, .title-page h2 {
-		font-size: 2rem;
-	}
+  .strategy-page h1,
+  .innovation-page h1,
+  .execution-page h1 {
+    font-size: 3rem;
+  }
 
-	.strategy-page h1, .innovation-page h1, .execution-page h1 {
-		font-size: 3rem;
-	}
-
-	.strategy-page h2, .innovation-page h2, .execution-page h2,
-	.left-side h3, .right-side h3 {
-		font-size: 1.25rem;
-	}
-
+  .strategy-page h2,
+  .innovation-page h2,
+  .execution-page h2,
+  .left-side h3,
+  .right-side h3 {
+    font-size: 1.25rem;
+  }
 }
 
 /* Tablet / Smaller screen width */
 @media only screen and (max-width: 1000px) {
+  .left-side img,
+  .right-side img {
+    display: none;
+  }
 
-	.left-side img, .right-side img {
-		display: none;
-	}
+  .icons img {
+    display: block;
+    height: auto;
+  }
 
-	.icons img {
-		display: block;
-		height: auto;
-	}
+  .title-page {
+    height: fit-content;
+  }
 
-	.title-page {
-        height: fit-content;
-	}
+  .title-page h1,
+  .title-page h2 {
+    font-size: 1.85rem;
+  }
 
-	.title-page h1, .title-page h2 {
-		font-size: 1.85rem;
-	}
+  .strategy-page,
+  .innovation-page,
+  .execution-page {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "left";
+  }
 
-	.strategy-page, .innovation-page, .execution-page {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
-		grid-template-areas:
-		'left';
-	}
+  .innovation-page .right-side {
+    grid-area: left;
+  }
 
-	.innovation-page .right-side {
-		grid-area: left;
-	}
+  .innovation-page .left-side {
+    grid-area: right;
+  }
 
-	.innovation-page .left-side {
-		grid-area: right;
-	}
+  .strategy-page h1,
+  .innovation-page h1,
+  .execution-page h1 {
+    font-size: 3.5rem;
+  }
 
-	.strategy-page h1, .innovation-page h1, .execution-page h1 {
-		font-size: 3.5rem;
-	}
+  .strategy-page h2,
+  .innovation-page h2,
+  .execution-page h2,
+  .left-side h3,
+  .right-side h3 {
+    font-size: 1.45rem;
+  }
 
-	.strategy-page h2, .innovation-page h2, .execution-page h2,
-	.left-side h3, .right-side h3 {
-		font-size: 1.45rem;
-	}
+  .left-side,
+  .right-side {
+    width: 100%;
+    margin: auto;
+  }
 
-	.left-side, .right-side {
-		width: 100%;
-		margin: auto;
-	}
+  .title,
+  .content-margin,
+  .personal-experience {
+    width: 100%;
+    margin: 1.5rem auto 0 auto;
+  }
 
-	.title, .content-margin, .personal-experience {
-		width: 100%;
-		margin: 1.5rem auto 0 auto;
-	}
+  .innovation-page .title,
+  .innovation-page .content-margin,
+  .innovation-page .personal-experience {
+    width: 100%;
+    margin: 1.5rem auto 0 auto;
+  }
 
-	.innovation-page .title, .innovation-page .content-margin,
-	.innovation-page .personal-experience {
-		width: 100%;
-		margin: 1.5rem auto 0 auto;
-	}
-
-	.content-margin, .personal-experience, .innovation-page .content-margin,
-	.innovation-page .personal-experience {
-		padding: 0 5%;
-	}
+  .content-margin,
+  .personal-experience,
+  .innovation-page .content-margin,
+  .innovation-page .personal-experience {
+    padding: 0 5%;
+  }
 }
 /* Tablet / Smaller Screen */
 
 /* Mobile phone */
 @media (max-width: 767px) {
+  .icons {
+    display: none;
+  }
 
-	.icons {
-		display: none;
-	}
+  .title-page h1,
+  .title-page h2 {
+    font-size: 1.45rem;
+  }
 
-	.title-page h1, .title-page h2 {
-		font-size: 1.45rem;
-	}
+  .strategy-page h1,
+  .innovation-page h1,
+  .execution-page h1 {
+    font-size: 3rem;
+  }
 
-	.strategy-page h1, .innovation-page h1, .execution-page h1 {
-		font-size: 3rem;
-	}
+  .strategy-page h2,
+  .innovation-page h2,
+  .execution-page h2,
+  .left-side h3,
+  .right-side h3 {
+    font-size: 1.25rem;
+  }
 
-	.strategy-page h2, .innovation-page h2, .execution-page h2,
-	.left-side h3, .right-side h3 {
-		font-size: 1.25rem;
-	}
-
-	.personal-experience h3 {
-		padding-bottom: 3vh;
-	}
-
+  .personal-experience h3 {
+    padding-bottom: 3vh;
+  }
 }

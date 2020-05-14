@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- INCLUDES -->
+    <% include partials/include.ejs %>
+    <link rel="stylesheet" type="text/css" href="stylesheets/contact.css" />
+  </head>
 
-	<!-- INCLUDES -->
-	<% include partials/include.ejs %>
-	<link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
-	
-</head>
+  <body>
+    <!-- NAVIGATION -->
+    <% include partials/nav.ejs %>
 
-<body>
+    <div class="container">
+      <form method="post" action="contact" role="form">
+        <fieldset>
+          <label for="fname">Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Your name.."
+            required
+          />
 
-	<!-- NAVIGATION -->
-	<% include partials/nav.ejs %>
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Your email address.."
+            required
+          />
 
-	<div class="container">
-		<form method="post" action="contact" role="form">
-			<fieldset>
-				<label for="fname">Name</label>
-				<input type="text" id="fname" name="fname" placeholder="Your name.." required>
-		  
-				<label for="email">Email</label>
-				<input type="text" id="email" name="email" placeholder="Your email address.." required>
-	
-				<label for="subject">Subject</label>
-				<input type="text" id="subject" name="subject" placeholder="Subject.." required>
-		  
-				<label for="message">Message</label>
-				<textarea id="message" name="message" placeholder="Enter your message here.." required style="height:200px"></textarea>
-		  
-				<input type="submit" value="Submit">
-				<div class="msg animated bounce <%= msg.class %>"> <%= msg.msg %> </div>
-			</fieldset>
-		</form>
-	</div>
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Subject.."
+            required
+          />
 
-</body>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Enter your message here.."
+            required
+            style="height: 200px;"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+          <div class="msg animated bounce <%= msg.class %>"><%= msg.msg %></div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
 </html>
