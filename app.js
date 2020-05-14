@@ -9,8 +9,9 @@ const bp = require('body-parser')
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-const contactRouter = require('./routes/contact')
-const worksRouter = require('./routes/works')
+const contactRouter = require('./routes/contact');
+const worksRouter = require('./routes/works');
+const loginRouter = require('./routes/login');
 
 var app = express();
 
@@ -24,13 +25,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(sslRedirect())
+app.use(sslRedirect());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/send', contactRouter)
-app.use('/contact', contactRouter)
-app.use('/works', worksRouter)
+app.use('/send', contactRouter);
+app.use('/contact', contactRouter);
+app.use('/works', worksRouter);
+app.use('/login', loginRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
